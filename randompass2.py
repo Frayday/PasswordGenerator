@@ -38,7 +38,7 @@ if __name__ == "__main__":
     try:
         password = generate_password(use_uppercase=True, use_numbers=True, use_symbols=True)
         print("Generated password:", password)
-        #save_to_file(password)
+        save_to_file(password)
         hashed_password = hash_password(password)
         save_to_file(hashed_password)
     except ValueError as e:
